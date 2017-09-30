@@ -6,7 +6,8 @@ body {
     color: green;
 }
 body {
-    background-color: Lightblue;
+    background-color: black;
+    font-size: 20px;
     
 }
 
@@ -35,6 +36,7 @@ add-a-new-todo-button {
 li{
     margin-bottom:10px;
     padding:5px;
+    font-size: 20px;
 }
 li:hover{
     background-color: lightgreen;
