@@ -20,7 +20,7 @@ span{
     font-size: 14px;
     font-weight: bold;
     background-color: silver;
-    padding:10px 5px 5px 10px
+    padding: 10px 20px 10px 10px;
     
 }
 
@@ -39,3 +39,9 @@ li{
 li:hover{
     background-color: lightgreen;
 }
+
+a:hover {
+    background-color:Darkblue;
+    color:white;
+}
+
