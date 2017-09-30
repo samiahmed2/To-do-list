@@ -1,0 +1,41 @@
+h1 {
+    color: Blue;
+}
+
+body {
+    color: green;
+}
+body {
+    background-color: Lightblue;
+    
+}
+
+input[type="submit"] {
+    background-color: Green;
+    color: White;
+}
+
+span{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: silver;
+    padding:10px 5px 5px 10px
+    
+}
+
+add-a-new-todo-button {
+    font-size: 20px;
+    color: Yellow;
+    outline:none;
+    border-style:none;
+    padding: 10px;
+}
+
+li{
+    margin-bottom:10px;
+    padding:5px;
+}
+li:hover{
+    background-color: lightgreen;
+}
