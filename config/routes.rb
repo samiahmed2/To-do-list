@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'todos/:id' => 'todos#show'
   post 'todos' => 'todos#create'
   post 'todos/:id'=>'todos#update'
+  post 'todos/:id/delete'=>'todos#destroy'
 end
+

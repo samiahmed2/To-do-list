@@ -1,7 +1,9 @@
 class TodosController < ApplicationController
 
 def index 
-    @code_word= "#{params[:code]} #{params[:word]}"
+   # @code_word= "#{params[:code]} #{params[:word]}"
+   @todos=Todo.all
+   
 end
 
 def create
@@ -29,6 +31,11 @@ def update
     compleate:params[:compleate]
  )
  redirect_to "/todos/#{todo.id}"
-end
 
+end
+def destroy 
+todo=Todo.find(params[:id])
+todo.destroy
+redirect_to "/"
+end
 end
