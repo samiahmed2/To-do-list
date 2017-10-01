@@ -1,10 +1,6 @@
 <h1>To Do List</h1> 
         
          
-Code Word <%=@code_word%>
-
-
-
 <ul> <li><input type="checkbox" name=""/>
 <a href="/todos/1">Remind me to do the work at <strong>7:00</strong></a></li>  
      <li><input type="checkbox" name=""/>Taking notes for classes from friends for being absent <span> 4 pomodoros</span></li>
@@ -13,10 +9,14 @@ Code Word <%=@code_word%>
      <li><input type="checkbox" name=""/>Communicate with teachers for help<span> 3 teachers</span></li>
      <a href="show.html">Show items</a>
 </ul>    
-<input type="text" placeholder="Add a new to do"/>    
-<input type="time" placeholder= "Enter time to remind you"/>
-<input type="number" placeholder="Number of pomodoros"/>
+<form action="/todos" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>" />
+<p>Name: <input type="text" name="name" placeholder="Add a new to do"/>    
+<p>Description: <input type="text" name="description" placeholder= "Type description"/></p>
+<p>Estimated time: <input type="number" name="duration" placeholder="Duration"/> Minutes</p>
+<p>Compleated: <input type="checkbox" name="compleate" placeholder="compleate"/></p>
 <input type="submit"/> 
+</form>
 
 
 
